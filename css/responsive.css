@@ -1,0 +1,1057 @@
+@media screen and (max-width: 950px) and (orientation: landscape) {
+  .scroll-container {
+    transform: translate(-50%) scale(0.6);
+    bottom: -25%;
+  }
+  #language-table {
+    transform: scale(0.4);
+    bottom: -32%;
+    left: 3900px;
+  }
+  #player-container {
+    transform: translate(-50%) scale(0.65);
+  }
+  #house-01 {
+    transform: scale(0.4);
+  }
+  #billboard-about {
+    transform: scale(0.5);
+    left: 1150px;
+  }
+  .personal-info {
+    transform: scale(0.4);
+    left: 1400px;
+  }
+  #billboard-skill {
+    transform: scale(0.5);
+    left: 3100px;
+  }
+  #thailand-container {
+    transform: scale(0.5);
+    left: 1850px;
+  }
+  .book {
+    transform: scale(0.5);
+  }
+  .certification {
+    transform: scale(0.4);
+    left: 2300px;
+  }
+  .ferris-wheel {
+    transform: scale(0.45);
+    left: 3450px;
+  }
+  .bus,
+  .bus-station {
+    transform: scale(0.45);
+  }
+  #bus-station-1 {
+    left: 6900px;
+  }
+  #bus-station-2 {
+    left: 7900px;
+  }
+  #bus-station-3 {
+    left: 8900px;
+  }
+  #bus-1 {
+    left: 8580px;
+  }
+  #bus-2 {
+    left: 9580px;
+  }
+  #bus-3 {
+    left: 10580px;
+  }
+
+  #start-profile .font-profile {
+    transform: translate(-50%) scale(0.55);
+  }
+
+  #honor-container {
+    transform: scale(0.4);
+    left: 2750px;
+  }
+  #topic-sign-1 {
+    transform: scale(0.4);
+    left: 3900px;
+  }
+  #topic-sign-2 {
+    transform: scale(0.4);
+    left: 4900px;
+  }
+  #topic-sign-3 {
+    transform: scale(0.4);
+    left: 6400px;
+  }
+  #topic-sign-4 {
+    transform: scale(0.4);
+    left: 9880px;
+  }
+  #other-skill-bg-container {
+    width: 1120px;
+    left: 5200px;
+  }
+
+  .other-skill-items-container {
+    transform: scale(0.38);
+    left: 4350px;
+  }
+  #tree {
+    height: 100px;
+  }
+  .reference-container {
+    width: 2800px;
+    left: 10300px;
+  }
+  .slider-1,
+  .slider-2 {
+    width: 100px;
+    height: 100px;
+    margin-top: 100px;
+  }
+  .design-text {
+    font-size: 1.2em;
+  }
+  .slider-text {
+    font-size: 2em;
+    top: 10%;
+  }
+  .slider-text p {
+    font-size: 0.8em;
+    color: #ffffff;
+  }
+  .freepik-icon {
+    top: -10%;
+    transform: scale(0.6) translate(-50%);
+  }
+  .envelope-wrapper {
+    transform: scale(0.95);
+    width: 400px;
+    height: 200px;
+    left: 13400px;
+  }
+  .contact-container {
+    transform: scale(0.5);
+    left: 13800px;
+  }
+  #container .items-horizontal {
+    width: 14500px;
+  }
+  .rocket .rocket-overlay::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) and (orientation: portrait) {
+  .scroll-container {
+    transform: translate(-50%) scale(0.6);
+    bottom: -13.5%;
+  }
+  #player-container {
+    transform: translate(-50%) scale(0.7);
+  }
+  #house-01 {
+    transform: scale(0.6);
+  }
+  #billboard-about {
+    transform: scale(0.8);
+    left: 1200px;
+  }
+  .personal-info {
+    left: 1780px;
+    transform: scale(0.7);
+  }
+  #billboard-skill {
+    transform: scale(0.8);
+    left: 4400px;
+  }
+
+  #thailand-container {
+    transform: scale(0.8);
+    left: 2400px;
+  }
+  .certification {
+    transform: scale(0.7);
+    left: 3200px;
+  }
+  .ferris-wheel {
+    transform: scale(0.7);
+    left: 4900px;
+  }
+  .bus,
+  .bus-station {
+    transform: scale(0.7);
+  }
+
+  #bus-station-1 {
+    left: 10800px;
+  }
+  #bus-station-2 {
+    left: 12800px;
+  }
+  #bus-station-3 {
+    left: 14800px;
+  }
+  #bus-1 {
+    left: 12500px;
+  }
+  #bus-2 {
+    left: 14500px;
+  }
+  #bus-3 {
+    left: 16500px;
+  }
+  #start-profile .font-profile {
+    transform: translate(-50%) scale(0.55);
+  }
+
+  #honor-container {
+    transform: scale(0.55);
+    left: 4100px;
+  }
+  #language-table {
+    transform: scale(0.7);
+    bottom: 12%;
+    left: 5750px;
+  }
+  #topic-sign-1 {
+    transform: scale(0.5);
+    left: 5500px;
+  }
+  #topic-sign-2 {
+    transform: scale(0.5);
+    left: 6900px;
+  }
+  #topic-sign-3 {
+    transform: scale(0.5);
+    left: 9800px;
+  }
+  #topic-sign-4 {
+    transform: scale(0.5);
+    left: 16000px;
+  }
+  #other-skill-bg-container {
+    width: 2240px;
+    left: 7400px;
+  }
+
+  .other-skill-items-container {
+    transform: scale(0.8);
+    left: 7100px;
+  }
+
+  #tree {
+    height: 130px;
+  }
+  .reference-container {
+    left: 16700px;
+  }
+  .slider-1,
+  .slider-2 {
+    width: 150px;
+    height: 150px;
+    margin-top: 5%;
+  }
+  .design-text {
+    font-size: 1.8em;
+  }
+  .slider-text {
+    font-size: 2.5em;
+    top: 20%;
+  }
+  .slider-text p {
+    font-size: 0.8em;
+    color: #ffffff;
+  }
+  .freepik-icon {
+    top: 20%;
+    transform: scale(0.8) translate(-50%);
+  }
+
+  .envelope-wrapper {
+    transform: scale(1.5);
+    width: 320px;
+    height: 200px;
+    left: 20000px;
+  }
+  .contact-container {
+    transform: scale(0.6);
+    left: 20400px;
+  }
+
+  #container .items-horizontal {
+    width: 21650px;
+  }
+
+  .rocket .rocket-overlay::after {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) and (orientation: portrait) {
+  .scroll-container {
+    bottom: -13.5%;
+  }
+  #billboard-about {
+    left: 1700px;
+  }
+  .personal-info {
+    left: 2500px;
+  }
+  #billboard-skill {
+    left: 5500px;
+  }
+  #thailand-container {
+    left: 3100px;
+  }
+
+  .certification {
+    left: 4000px;
+  }
+  .ferris-wheel {
+    left: 6100px;
+  }
+  #other-skill-container {
+    transform: scale(0.7);
+  }
+
+  #bus-station-1 {
+    left: 13000px;
+  }
+  #bus-station-2 {
+    left: 15000px;
+  }
+  #bus-station-3 {
+    left: 17000px;
+  }
+  #bus-1 {
+    left: 14700px;
+  }
+  #bus-2 {
+    left: 16700px;
+  }
+  #bus-3 {
+    left: 18700px;
+  }
+
+  #honor-container {
+    transform: scale(0.85);
+    left: 5150px;
+  }
+  #language-table {
+    bottom: 30%;
+    transform: scale(0.85);
+    left: 7300px;
+  }
+  .topic-sign {
+    transform: scale(0.6);
+  }
+  #topic-sign-1 {
+    left: 6930px;
+  }
+  #topic-sign-2 {
+    left: 8650px;
+  }
+  #topic-sign-3 {
+    left: 12150px;
+  }
+  #topic-sign-4 {
+    left: 18400px;
+  }
+  #other-skill-bg-container {
+    left: 9200px;
+  }
+
+  .other-skill-items-container {
+    left: 9200px;
+  }
+  .reference-container {
+    left: 19100px;
+  }
+  #start-profile .font-profile {
+    transform: translate(-50%) scale(0.8);
+  }
+  .envelope-wrapper {
+    transform: scale(2);
+    width: 400px;
+    height: 200px;
+    left: 22500px;
+  }
+  #container .items-horizontal {
+    width: 25120px;
+  }
+  .contact-container {
+    transform: scale(0.85);
+    left: 23400px;
+  }
+  .rocket .rocket-overlay::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1366px) and (min-width: 1024px) and (orientation: landscape) and (max-height: 999px) and (min-height: 769px) {
+  .scroll-container {
+    transform: translate(-50%) scale(0.8);
+    bottom: -15.5%;
+  }
+  #billboard-about {
+    transform: scale(0.9);
+    left: 1800px;
+  }
+  #house-01 {
+    transform: scale(0.8);
+  }
+  .personal-info {
+    transform: scale(0.7);
+    left: 2500px;
+  }
+  #billboard-skill {
+    transform: scale(0.9);
+    left: 5500px;
+  }
+
+  #thailand-container {
+    transform: scale(0.9);
+    left: 3100px;
+  }
+
+  .certification {
+    left: 3900px;
+    transform: scale(0.73);
+  }
+  .ferris-wheel {
+    transform: scale(0.7);
+    left: 6100px;
+  }
+  #other-skill-container {
+    transform: scale(0.7);
+  }
+
+  #bus-station-1 {
+    transform: scale(0.8);
+    left: 13000px;
+  }
+  #bus-station-2 {
+    transform: scale(0.8);
+    left: 15000px;
+  }
+  #bus-station-3 {
+    transform: scale(0.8);
+    left: 17000px;
+  }
+  #bus-1 {
+    transform: scale(0.8);
+    left: 14700px;
+  }
+  #bus-2 {
+    transform: scale(0.8);
+    left: 16700px;
+  }
+  #bus-3 {
+    transform: scale(0.8);
+    left: 18700px;
+  }
+
+  #honor-container {
+    transform: scale(0.75);
+    left: 5030px;
+  }
+  #language-table {
+    transform: scale(0.75);
+    bottom: 13%;
+    left: 7100px;
+  }
+  .topic-sign {
+    transform: scale(0.6);
+  }
+  #topic-sign-1 {
+    left: 6750px;
+  }
+  #topic-sign-2 {
+    left: 8400px;
+  }
+  #topic-sign-3 {
+    left: 12000px;
+  }
+  #topic-sign-4 {
+    left: 18400px;
+  }
+  #other-skill-bg-container {
+    left: 9100px;
+    width: 2500px;
+  }
+
+  .other-skill-items-container {
+    width: 2500px;
+    transform: scale(0.8);
+    left: 9100px;
+  }
+  #other-skill-1 {
+    left: 11%;
+  }
+  #other-skill-2 {
+    left: 27%;
+  }
+  #other-skill-3 {
+    left: 43%;
+  }
+  #other-skill-4 {
+    left: 59%;
+  }
+  #other-skill-5 {
+    left: 75%;
+  }
+  .reference-container {
+    left: 19100px;
+  }
+  #start-profile .font-profile {
+    transform: translate(-50%) scale(0.8);
+  }
+  .envelope-wrapper {
+    transform: scale(2);
+    width: 400px;
+    height: 200px;
+    left: 22500px;
+  }
+  .contact-container {
+    transform: scale(0.8);
+    left: 23500px;
+  }
+  .slider-1,
+  .slider-2 {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 100px;
+  }
+  #container .items-horizontal {
+    width: 24800px;
+  }
+  .rocket .rocket-overlay::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1366px) and (min-width: 1024px) and (orientation: landscape) and (max-height: 670px) {
+  .scroll-container {
+    transform: translate(-50%) scale(0.7);
+    bottom: -15.5%;
+  }
+  #billboard-about {
+    transform: scale(0.7);
+    left: 1800px;
+  }
+  #house-01 {
+    transform: scale(0.6);
+  }
+  .personal-info {
+    transform: scale(0.6);
+    left: 2500px;
+  }
+  #billboard-skill {
+    transform: scale(0.7);
+    left: 5500px;
+  }
+
+  #thailand-container {
+    transform: scale(0.7);
+    left: 3100px;
+  }
+
+  .certification {
+    left: 3900px;
+    transform: scale(0.56);
+  }
+  .ferris-wheel {
+    transform: scale(0.6);
+    left: 6100px;
+  }
+  #other-skill-container {
+    transform: scale(0.7);
+  }
+
+  #bus-station-1 {
+    transform: scale(0.6);
+    left: 13000px;
+  }
+  #bus-station-2 {
+    transform: scale(0.6);
+    left: 15000px;
+  }
+  #bus-station-3 {
+    transform: scale(0.6);
+    left: 17000px;
+  }
+  #bus-1 {
+    transform: scale(0.6);
+    left: 14700px;
+  }
+  #bus-2 {
+    transform: scale(0.6);
+    left: 16700px;
+  }
+  #bus-3 {
+    transform: scale(0.6);
+    left: 18700px;
+  }
+
+  #honor-container {
+    transform: scale(0.6);
+    left: 4700px;
+  }
+  #language-table {
+    transform: scale(0.6);
+    bottom: 0%;
+    left: 7100px;
+  }
+  .topic-sign {
+    transform: scale(0.5);
+  }
+  #topic-sign-1 {
+    left: 6750px;
+  }
+  #topic-sign-2 {
+    left: 8400px;
+  }
+  #topic-sign-3 {
+    left: 12000px;
+  }
+  #topic-sign-4 {
+    left: 18400px;
+  }
+  #other-skill-bg-container {
+    left: 9100px;
+    width: 2500px;
+  }
+
+  .other-skill-items-container {
+    width: 2500px;
+    transform: scale(0.6);
+    left: 9100px;
+  }
+  #other-skill-1 {
+    left: 5%;
+  }
+  #other-skill-2 {
+    left: 25%;
+  }
+  #other-skill-3 {
+    left: 45%;
+  }
+  #other-skill-4 {
+    left: 65%;
+  }
+  #other-skill-5 {
+    left: 85%;
+  }
+  .reference-container {
+    left: 19100px;
+  }
+  #start-profile .font-profile {
+    transform: translate(-50%) scale(0.6);
+  }
+  .envelope-wrapper {
+    transform: scale(1.5);
+    width: 400px;
+    height: 200px;
+    left: 22500px;
+  }
+  .contact-container {
+    transform: scale(0.6);
+    left: 23200px;
+  }
+  .slider-1,
+  .slider-2 {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 100px;
+  }
+  #container .items-horizontal {
+    width: 24700px;
+  }
+  .rocket .rocket-overlay::after {
+    display: none;
+  }
+  #player-container {
+    transform: translate(-50%) scale(0.8);
+  }
+}
+
+@media screen and (max-width: 1366px) and (min-width: 1024px) and (min-height: 1000px) and (orientation: landscape) {
+  .scroll-container {
+    bottom: -13%;
+  }
+  .envelope-wrapper {
+    transform: scale(2.4);
+    width: 400px;
+    height: 200px;
+    left: 24100px;
+  }
+  .contact-container {
+    left: 25220px;
+  }
+}
+@media screen and (max-width: 1366px) and (min-width: 1024px) and (max-height: 768px) and (min-height: 671px) {
+  .scroll-container {
+    transform: translate(-50%) scale(0.8);
+    bottom: -15.5%;
+  }
+  #billboard-about {
+    transform: scale(0.82);
+    left: 1800px;
+  }
+  #house-01 {
+    transform: scale(0.7);
+  }
+  .personal-info {
+    transform: scale(0.67);
+    left: 2500px;
+  }
+  #billboard-skill {
+    transform: scale(0.82);
+    left: 5500px;
+  }
+
+  #thailand-container {
+    transform: scale(0.8);
+    left: 3100px;
+  }
+
+  .certification {
+    left: 3900px;
+    transform: scale(0.65);
+  }
+  .ferris-wheel {
+    transform: scale(0.68);
+    left: 6100px;
+  }
+  #other-skill-container {
+    transform: scale(0.7);
+  }
+
+  #bus-station-1 {
+    transform: scale(0.75);
+    left: 13000px;
+  }
+  #bus-station-2 {
+    transform: scale(0.75);
+    left: 15000px;
+  }
+  #bus-station-3 {
+    transform: scale(0.75);
+    left: 17000px;
+  }
+  #bus-1 {
+    transform: scale(0.75);
+    left: 14700px;
+  }
+  #bus-2 {
+    transform: scale(0.75);
+    left: 16700px;
+  }
+  #bus-3 {
+    transform: scale(0.75);
+    left: 18700px;
+  }
+
+  #honor-container {
+    transform: scale(0.75);
+    left: 4700px;
+  }
+  #language-table {
+    transform: scale(0.65);
+    bottom: 8%;
+    left: 7200px;
+  }
+  .topic-sign {
+    transform: scale(0.6);
+  }
+  #topic-sign-1 {
+    left: 6750px;
+  }
+  #topic-sign-2 {
+    left: 8400px;
+  }
+  #topic-sign-3 {
+    left: 12000px;
+  }
+  #topic-sign-4 {
+    left: 18400px;
+  }
+  #other-skill-bg-container {
+    left: 9100px;
+    width: 2500px;
+  }
+
+  .other-skill-items-container {
+    width: 2500px;
+    transform: scale(0.68);
+    left: 9100px;
+  }
+  #other-skill-1 {
+    left: 5%;
+  }
+  #other-skill-2 {
+    left: 23%;
+  }
+  #other-skill-3 {
+    left: 41%;
+  }
+  #other-skill-4 {
+    left: 59%;
+  }
+  #other-skill-5 {
+    left: 77%;
+  }
+  .reference-container {
+    left: 19100px;
+  }
+  #start-profile .font-profile {
+    transform: translate(-50%) scale(0.8);
+  }
+  .envelope-wrapper {
+    transform: scale(1.7);
+    width: 400px;
+    height: 200px;
+    left: 22400px;
+  }
+  .contact-container {
+    transform: scale(0.8);
+    left: 23100px;
+  }
+  .slider-1,
+  .slider-2 {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 100px;
+  }
+  #container .items-horizontal {
+    width: 24200px;
+  }
+  .rocket .rocket-overlay::after {
+    display: none;
+  }
+}
+@media screen and (max-width: 1999px) and (min-width: 1367px) and (min-height: 1220px) {
+  #container .items-horizontal {
+    width: 27000px;
+  }
+}
+
+@media screen and (max-width: 1999px) and (min-width: 1367px) and (max-height: 900px) {
+  .scroll-container {
+    transform: translate(-50%) scale(0.8);
+    bottom: -15.5%;
+  }
+  #billboard-about {
+    transform: scale(0.9);
+    left: 1900px;
+  }
+  #house-01 {
+    transform: scale(0.8);
+  }
+  .personal-info {
+    transform: scale(0.7);
+    left: 2500px;
+  }
+  #billboard-skill {
+    transform: scale(0.9);
+    left: 5500px;
+  }
+
+  #thailand-container {
+    transform: scale(0.9);
+    left: 3100px;
+  }
+
+  .certification {
+    left: 3900px;
+    transform: scale(0.73);
+  }
+  .ferris-wheel {
+    transform: scale(0.7);
+    left: 6100px;
+  }
+  #other-skill-container {
+    transform: scale(0.7);
+  }
+
+  #bus-station-1 {
+    transform: scale(0.8);
+    left: 13000px;
+  }
+  #bus-station-2 {
+    transform: scale(0.8);
+    left: 15000px;
+  }
+  #bus-station-3 {
+    transform: scale(0.8);
+    left: 17000px;
+  }
+  #bus-1 {
+    transform: scale(0.8);
+    left: 14700px;
+  }
+  #bus-2 {
+    transform: scale(0.8);
+    left: 16700px;
+  }
+  #bus-3 {
+    transform: scale(0.8);
+    left: 18700px;
+  }
+
+  #honor-container {
+    transform: scale(0.75);
+    left: 5030px;
+  }
+  #language-table {
+    transform: scale(0.75);
+    bottom: 13%;
+    left: 7200px;
+  }
+  .topic-sign {
+    transform: scale(0.6);
+  }
+  #topic-sign-1 {
+    left: 6750px;
+  }
+  #topic-sign-2 {
+    left: 8400px;
+  }
+  #topic-sign-3 {
+    left: 12000px;
+  }
+  #topic-sign-4 {
+    left: 18400px;
+  }
+  #other-skill-bg-container {
+    left: 9100px;
+    width: 2500px;
+  }
+
+  .other-skill-items-container {
+    width: 2500px;
+    transform: scale(0.8);
+    left: 9100px;
+  }
+  #other-skill-1 {
+    left: 11%;
+  }
+  #other-skill-2 {
+    left: 27%;
+  }
+  #other-skill-3 {
+    left: 43%;
+  }
+  #other-skill-4 {
+    left: 59%;
+  }
+  #other-skill-5 {
+    left: 75%;
+  }
+  .reference-container {
+    left: 19100px;
+  }
+  #start-profile .font-profile {
+    transform: translate(-50%) scale(0.8);
+  }
+  .envelope-wrapper {
+    transform: scale(2);
+    width: 400px;
+    height: 200px;
+    left: 22800px;
+  }
+  .contact-container {
+    transform: scale(0.8);
+    left: 23750px;
+  }
+  .slider-1,
+  .slider-2 {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 100px;
+  }
+  #container .items-horizontal {
+    width: 25000px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .scroll-container {
+    bottom: -10%;
+  }
+  #billboard-about {
+    left: 3000px;
+  }
+  .personal-info {
+    left: 3800px;
+  }
+  #thailand-container {
+    left: 4500px;
+  }
+
+  .certification {
+    left: 5500px;
+  }
+  #honor-container {
+    left: 6650px;
+  }
+  #billboard-skill {
+    left: 7050px;
+  }
+  .ferris-wheel {
+    left: 7800px;
+  }
+  #topic-sign-1 {
+    left: 8700px;
+  }
+  #language-table {
+    left: 9400px;
+  }
+  #topic-sign-2 {
+    left: 10800px;
+  }
+  #other-skill-bg-container {
+    left: 11600px;
+  }
+  .other-skill-items-container {
+    left: 11600px;
+  }
+  #topic-sign-3 {
+    left: 14800px;
+  }
+  #bus-station-1 {
+    left: 16000px;
+  }
+  #bus-station-2 {
+    left: 18000px;
+  }
+  #bus-station-3 {
+    left: 20000px;
+  }
+  #bus-1 {
+    left: 17700px;
+  }
+  #bus-2 {
+    left: 19700px;
+  }
+  #bus-3 {
+    left: 21700px;
+  }
+  #topic-sign-4 {
+    left: 21500px;
+  }
+  .reference-container {
+    left: 22200px;
+  }
+  .contact-container {
+    left: 26900px;
+  }
+  .envelope-wrapper {
+    height: 200px;
+    left: 26000px;
+  }
+  #container .items-horizontal {
+    width: 29000px;
+  }
+}
