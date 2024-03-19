@@ -1,3 +1,6 @@
+// Selecting various elements from the DOM
+
+// Containers
 const contentDiv = document.getElementById("content");
 const pageDiv = document.getElementById("page");
 const containerDiv = document.getElementById("container");
@@ -19,10 +22,8 @@ const busStationDiv3 = document.getElementById("bus-station-3");
 let busDiv1 = document.getElementById("bus-1");
 let busDiv2 = document.getElementById("bus-2");
 let busDiv3 = document.getElementById("bus-3");
-
 const rocket1Div = document.getElementById("rocket-1");
 const stageDiv = document.getElementById("stage");
-
 const midRoll = document.querySelector(".mid-roll");
 const leftRoll = document.querySelector(".left-roll");
 const rightRoll = document.querySelector(".right-roll");
@@ -43,19 +44,21 @@ const feriswheelDiv = document.querySelector(".ferris-wheel");
 const contactContainerDiv = document.querySelector(".contact-container");
 const itemsHorizontal = document.querySelector(".items-horizontal");
 
+// Arrays and NodeList
 const designTexts = document.querySelectorAll(".design-text");
 const sliderImages = document.querySelectorAll(".slider-img");
 const rockets = document.querySelectorAll(".rocket");
 
+// Variables for animation
 const initialPositionRocket = rocket1Div.offsetLeft + rocket1Div.offsetWidth;
 const rocketTargetAnimateArray = [569, 569, 339, 339, 49];
-
 let busLeftValues = [
   { start: busDiv1.offsetLeft, target: busDiv1.offsetLeft - 2000 },
   { start: busDiv2.offsetLeft, target: busDiv2.offsetLeft - 2000 },
   { start: busDiv3.offsetLeft, target: busDiv3.offsetLeft - 2000 },
 ];
 
+// Media queries
 const mediaQuerySmPhone = window.matchMedia(
   "(max-width: 640px) and (orientation: portrait)"
 );
@@ -77,12 +80,14 @@ const mediaQueryStandardScreenLowHeight = window.matchMedia(
 const mediaQueryMaxScreen = window.matchMedia("(min-width:2100px)");
 const mediaQueryHeightScreen = window.matchMedia("(min-height:1050px)");
 
+// Arrays to store speed and other properties for animation
 const itemsHorizontalSpeedArray = [];
 const itemsVerticalSpeedArray = [];
 const itemsHorizontalArray = [];
 const otherSkillArray = [];
 const busArray = [];
 
+// Array for information container
 const informationContainerArray = [
   languageTableDiv,
   thailandContainerDiv,
@@ -97,6 +102,7 @@ const informationContainerArray = [
   personalInfoDiv,
 ];
 
+// Variables for page scroll position tracking
 let pageVerticalPosition = 0;
 let previousPageVerticalPosition = 0;
 let deltaPageVerticalPosition = 0;
@@ -115,63 +121,77 @@ let canAnimateBus2;
 let canAnimateBus3;
 let canAnimatepPersonalInfo;
 
+// Function to handle page scrolling
 function handlePageScroll() {
+  // Update page scroll position variables
   previousPageVerticalPosition = pageVerticalPosition;
   pageVerticalPosition = window.scrollY;
   deltaPageVerticalPosition =
     pageVerticalPosition - previousPageVerticalPosition;
+  // Reset variables and functions if page is scrolled to the top
   if (pageVerticalPosition <= 0) {
     resetVariables();
     resetFunctions();
   }
 }
 
+// Function to reset animation variables
 function resetVariables() {
+  // Reset animation flags if page is scrolled to the top
   if (pageVerticalPosition === 0) {
-    canAnimateLanguageTable =
-      canAnimateNoteRoll =
-      canAnimateAboutText =
-      canAnimateSkillText =
-      canAnimateHonorConDiv =
-      canAnimateCertification =
-      canAnimateOtherSkill =
-      canAnimateBus1 =
-      canAnimateBus2 =
-      canAnimateBus3 =
-      canAnimatepPersonalInfo =
-        true;
+    canAnimateLanguageTable = true;
+    canAnimateNoteRoll = true;
+    canAnimateAboutText = true;
+    canAnimateSkillText = true;
+    canAnimateHonorConDiv = true;
+    canAnimateCertification = true;
+    canAnimateOtherSkill = true;
+    canAnimateBus1 = true;
+    canAnimateBus2 = true;
+    canAnimateBus3 = true;
+    canAnimatepPersonalInfo = true;
   }
 }
 
+// Function to reset animation functions
 function resetFunctions() {
+  // Reset animations
   setAllAnimation();
 }
 
+// Function to run animations after scrolling
 function runFunctionAfterScroll() {
+  // Run animations after scrolling
   moveLayers();
   orientPlayer();
   animateInformation();
+  // Fade out scroll container
   scrollContainerDiv.style.transition = "opacity 0.5s ease-out";
   scrollContainerDiv.style.opacity = "0";
 }
 
+// Function to animate scrolling or swiping text container
 function animateScrollOrSwipeTextContainer() {
+  // Toggle opacity of scroll text container
   clearInterval(scrollContainerTimer);
   scrollContainerTimer = setInterval(function () {
     turnOnAndOffScrollContainer();
   }, 1000);
 }
 
+// Function to turn on and off scroll container
 function turnOnAndOffScrollContainer() {
+  // Fade out scroll text container
   function fadeOut(element) {
     element.style.opacity = 1;
     setTimeout(function () {
       element.style.opacity = 0;
     }, 500);
   }
-
   fadeOut(scrollTextDiv);
 }
+
+// Function to move layers horizontally based on scroll position
 function moveLayers() {
   for (let i = 0; i < itemsHorizontalArray.length; i++) {
     itemsHorizontalArray[i].style.left = `${
@@ -180,6 +200,7 @@ function moveLayers() {
   }
 }
 
+// Function to set speed ratios for horizontal items
 function setItemsSpeed() {
   itemsHorizontalSpeedArray.length = 0;
   itemsVerticalSpeedArray.length = 0;
@@ -193,6 +214,7 @@ function setItemsSpeed() {
   }
 }
 
+// Function to set the height of the page based on horizontal items
 function setPageHeight() {
   const pageHeight =
     itemsHorizontalArray[itemsHorizontalArray.length - 1].offsetWidth -
@@ -200,6 +222,7 @@ function setPageHeight() {
   pageDiv.style.height = pageHeight + "px";
 }
 
+// Function to update bus positions based on media query matches
 function updateBusArrays() {
   busLeftValues = [
     { start: busDiv1.offsetLeft, target: busDiv1.offsetLeft - 2000 },
@@ -255,11 +278,14 @@ function updateBusArrays() {
 
   innerHeight = window.innerHeight;
 }
+
+// Function to animate personal information
 function animatePersonalInfo() {
   personalInfoDiv.style.transition = "bottom 0.5s ease-out";
   personalInfoDiv.style.bottom = "20%";
 }
 
+// Function to animate rocket positions
 function animateRocket() {
   function animate() {
     rockets.forEach((rocket, i) => {
@@ -275,17 +301,19 @@ function animateRocket() {
   }
 }
 
+// Function to animate honor container position
 function animateHonorContainer() {
   honorContainerDiv.style.transition = "top 0.5s ease-out";
   honorContainerDiv.style.top = "0";
 }
 
+// Function to animate bus positions
 function animateBus(i) {
   busArray[i].style.transition = "left 0.5s ease-out";
-
   busArray[i].style.left = busLeftValues[i].target + "px";
 }
 
+// Function to animate other skill positions
 function animateOtherSkill() {
   otherSkillArray.forEach((otherSkill, i) => {
     otherSkill.style.transition = "bottom 1s cubic-bezier(0.4, 0, 0.2, 1.5)";
@@ -306,6 +334,7 @@ function animateOtherSkill() {
   });
 }
 
+// Function to animate envelope and contact container positions
 function animateEnvelope() {
   if (
     containerDiv.offsetWidth * 0.5 + pageVerticalPosition >=
@@ -323,6 +352,7 @@ function animateEnvelope() {
   }
 }
 
+// Function to animate various information based on scroll position
 function animateInformation() {
   for (let i = 0; i < informationContainerArray.length; i++) {
     if (
@@ -411,6 +441,7 @@ function animateInformation() {
   }
 }
 
+// Function to animate text opacity
 function animateOpacityText(textClass) {
   textClass.style.transition = "opacity 0.3s ease-in-out";
   textClass.style.opacity = "1";
@@ -422,6 +453,7 @@ function animateOpacityText(textClass) {
   }, 300);
 }
 
+// Function to animate note roll container
 function animateNoteRollContainer() {
   noteRollContainerDiv.style.transition = "top 0.5s ease-out";
 
@@ -456,6 +488,7 @@ function animateNoteRollContainer() {
   }, 0);
 }
 
+// Function to set the position of other skill elements
 function setPositionOtherSkill() {
   for (let i = 0; i < otherSkillArray.length; i++) {
     if (mediaQueryLgPhone.matches) {
@@ -472,6 +505,7 @@ function setPositionOtherSkill() {
   }
 }
 
+// Function to set the position of rockets
 function setPositionRockets() {
   rockets.forEach((rocket, i) => {
     rocket.style.left = canAnimateLanguageTable
@@ -480,6 +514,7 @@ function setPositionRockets() {
   });
 }
 
+// Function to set the position of note roll and honor elements
 function setPositionNoteRollAndHonor() {
   if (canAnimateNoteRoll) {
     noteRollContainerDiv.style.top = "0";
@@ -506,15 +541,19 @@ function setPositionNoteRollAndHonor() {
   personalInfoDiv.bottom = canAnimatepPersonalInfo ? "100%" : "20%";
 }
 
+// Function to set the opacity of text elements
 function setOpacityText() {
   aboutText.style.opacity = canAnimateAboutText ? "0" : "1";
   skillText.style.opacity = canAnimateSkillText ? "0" : "1";
   certificationText.style.opacity = canAnimateCertification ? "0" : "1";
 }
+
+// Function to set the position of the start profile element
 function setPositionStartProfile() {
   startProfileDiv.style.width = containerDiv.offsetWidth + "px";
 }
 
+// Function to perform all animations
 function setAllAnimation() {
   setPositionNoteRollAndHonor();
   setPositionRockets();
@@ -522,6 +561,7 @@ function setAllAnimation() {
   setOpacityText();
 }
 
+// Function to store divs
 function storeDivs() {
   const divs = document.getElementsByTagName("div");
 
@@ -541,6 +581,7 @@ function storeDivs() {
   }
 }
 
+// Function to show design text on hover
 function showDesignText() {
   sliderImages.forEach((image, index) => {
     image.addEventListener("mouseover", function () {
@@ -559,6 +600,7 @@ function showDesignText() {
   });
 }
 
+// Function to pause player animation
 function pauseAnimationPlayer() {
   playerFramesDiv.style.animationPlayState = "paused";
   playerFramesDiv.classList.remove("walk-animation");
@@ -566,15 +608,18 @@ function pauseAnimationPlayer() {
   setPlayerToFront();
 }
 
+// Function to play player animation
 function playAnimationPlayer() {
   playerFramesDiv.style.animationPlayState = "running";
 }
 
+// Function to set player to front based on scroll direction
 function setPlayerToFront() {
   playerFramesDiv.style.top = "-500px";
   playerFramesDiv.style.left = "0";
 }
 
+// Function to orient player based on scroll direction
 function orientPlayer() {
   playerFramesDiv.classList.add("walk-animation");
   if (deltaPageVerticalPosition > 0) {
@@ -584,10 +629,12 @@ function orientPlayer() {
   }
 }
 
+// Event listener to scroll to top before unload
 window.addEventListener("beforeunload", function () {
   window.scrollTo(0, 0);
 });
 
+// Function to be executed on page load
 function onLoad() {
   loaderContainerDiv.style.opacity = 1;
   storeDivs();
@@ -604,12 +651,14 @@ function onLoad() {
   animateScrollOrSwipeTextContainer();
 }
 
+// Function to hide loader after load
 function hideLoader() {
   loaderContainerDiv.style.transition = "opacity 1s ease";
   loaderContainerDiv.style.opacity = 0;
   contentDiv.removeAttribute("class");
 }
 
+// Function to be executed on scroll
 function onScroll() {
   handlePageScroll();
   runFunctionAfterScroll();
@@ -622,6 +671,7 @@ function onScroll() {
   }, 300);
 }
 
+// Function to be executed on window resize
 function onResize() {
   setPageHeight();
   setItemsSpeed();
@@ -634,6 +684,7 @@ function onResize() {
   updateBusArrays();
 }
 
+// Event listeners for load, scroll, and resize
 window.addEventListener("load", onLoad);
 window.addEventListener("scroll", onScroll);
 window.addEventListener("resize", onResize);
